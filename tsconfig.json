@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declaration": true, // Generate .d.ts files
+    "declarationDir": "./dist", // Output declarations in the dist folder
+    "emitDeclarationOnly": true, // Emit only .d.ts files, not .js files
+    "outDir": "./dist", // Output compiled files to the dist folder
+    "target": "ESNext", // You can adjust this based on your needs
+    "module": "ESNext", // ESNext or commonjs based on your library target
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
