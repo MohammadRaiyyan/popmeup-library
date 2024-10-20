@@ -23,7 +23,7 @@ npm i popmeup
 ```typescript
 import React from "react";
 import ReactDOM from "react-dom";
-import { ModalContextProvider } from "use-modal-service";
+import { ModalContextProvider } from "popmeup";
 import App from "./App";
 
 ReactDOM.render(
