@@ -1,5 +1,3 @@
-# use-modal-service
-
 A lightweight React hook library to manage modal dialogs and confirmation modals with customizable actions. This library simplifies the process of handling modal dialogs, including confirmation dialogs, in React applications.
 
 ## Features
