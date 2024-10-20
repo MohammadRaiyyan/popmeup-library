@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/main.ts'),
+      entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'MyPopup',
       formats: ['es', 'umd'],
       fileName: (format) => `popmeup.${format}.js`,
@@ -20,6 +20,7 @@ export default defineConfig({
         },
       },
     },
+    cssCodeSplit: false,
   },
   resolve: {
     alias: {

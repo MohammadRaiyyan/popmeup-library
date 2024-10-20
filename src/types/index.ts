@@ -24,3 +24,13 @@ export type ModalProps = {
     footerButtons?: ButtonsType[];
     children: ReactNode;
 };
+export type ConfirmationModalPropType = {
+    primaryActionText?: string;
+    secondaryActionText?: string;
+    title: string | ReactNode;
+    subtitle: string | ReactNode;
+    children: ReactNode;
+    action?: "delete" | "confirm";
+    onConfirm: () => Promise<void>;
+    onDeny?: () => void;
+};

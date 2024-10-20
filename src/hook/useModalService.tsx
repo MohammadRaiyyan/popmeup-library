@@ -1,18 +1,7 @@
-import { ReactNode, useCallback } from "react";
+import { useCallback } from "react";
 import { ConfirmationModal, Modal } from "../components/Modal";
-import { ModalProps } from "../types";
+import { ConfirmationModalPropType, ModalProps } from "../types";
 import useModal from "./useModal";
-
-type ConfirmationModalPropType = {
-  primaryActionText?: string;
-  secondaryActionText?: string;
-  title: string | ReactNode;
-  subtitle: string | ReactNode;
-  children: ReactNode;
-  action?: "delete" | "confirm";
-  onConfirm: () => Promise<void>;
-  onDeny?: () => void;
-};
 
 type UseModalServiceReturnType = {
   confirmAction: (options: ConfirmationModalPropType) => Promise<void>;
