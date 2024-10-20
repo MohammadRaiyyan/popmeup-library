@@ -1,6 +1,6 @@
 {
   "name": "popmeup",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "type": "module",
   "main": "dist/popmeup.umd.js",
   "module": "dist/popmeup.es.js",
