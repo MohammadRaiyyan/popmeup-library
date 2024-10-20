@@ -91,33 +91,33 @@ export default MyComponent;
 The **`useModalService`** return types:
 
 ```typescript
-type UseModalService : {
+type UseModalService = {
   confirmAction: (options: ConfirmationModalPropType) => Promise<void>;
   showModal: (options: ModalProps) => void;
   closeModal: () => void;
-}
+};
 
- type ConfirmationModalPropType = {
-    primaryActionText?: string;
-    secondaryActionText?: string;
-    title: string | ReactNode;
-    subtitle: string | ReactNode;
-    children: ReactNode;
-    action?: "delete" | "confirm";
-    onConfirm: () => Promise<void>;
-    onDeny?: () => void;
-}
+type ConfirmationModalPropType = {
+  primaryActionText?: string;
+  secondaryActionText?: string;
+  title: string | ReactNode;
+  subtitle: string | ReactNode;
+  children: ReactNode;
+  action?: "delete" | "confirm";
+  onConfirm: () => Promise<void>;
+  onDeny?: () => void;
+};
 
-type ModalProps : {
-    size: "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl" | "fullWidth";
-    title: string | ReactNode;
-    titleSubtext?: string | ReactNode;
-    subtitle: string | ReactNode;
-    rightSection?: ReactNode;
-    headerButtons?: ButtonsType[];
-    footerButtons?: ButtonsType[];
-    children: ReactNode;
-}
+type ModalProps = {
+  size: "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl" | "fullWidth";
+  title: string | ReactNode;
+  titleSubtext?: string | ReactNode;
+  subtitle: string | ReactNode;
+  rightSection?: ReactNode;
+  headerButtons?: ButtonsType[];
+  footerButtons?: ButtonsType[];
+  children: ReactNode;
+};
 ```
 
 ### License
